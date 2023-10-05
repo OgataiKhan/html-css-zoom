@@ -18,10 +18,6 @@ DEBUG
 
 /* #region */
 
-.debug header {
-   background-color: black;
-}
-
 .debug main {
    background-color: green;
 }
@@ -30,8 +26,16 @@ DEBUG
    background-color: aqua;
 }
 
-.debug .container {
+/* .debug .container {
    background-color: orange;
+} */
+
+.debug .call-window {
+   background-color: purple;  
+}
+
+.debug .users {
+   background-color: yellow;
 }
 
 /* #endregion */
@@ -50,9 +54,31 @@ body {
    font-family: 'Roboto', sans-serif;
 }
 
-.headericon {
+header .headericon {
    font-size: 12px;
 }
+
+main .mute {
+   font-size: 13px;
+}
+
+main .username {
+   font-size: 12px;
+}
+
+ul {
+   list-style: none;
+}
+
+footer .icon {
+   font-size: 30px;
+}
+
+footer .angle-up {
+   font-size: 10px;
+   font-weight: 700;
+}
+
 
 /* #endregion */
 
@@ -86,14 +112,20 @@ HEADER
 header {
    height: 50px;
    text-align: end;
+   background-color: black;
 }
 
-.headericon {
+header .headericon {
    display: inline-block;
    background-color: #4a4a4a;
    border-radius: 5px;
    padding: 4px;
-   margin: 4px;
+   margin-top: 4px;
+   margin-left: 1px;
+}
+
+header .headericon:last-child {
+   margin-right: 5px;
 }
 
 /* #endregion */
@@ -109,9 +141,33 @@ MAIN
 main {
    height: calc(100vh - 130px);
    padding-top: 30px;
+   overflow-y: scroll;
    /* padding-top: 80px; */
 }
 
+main .call-window {
+   flex-wrap: wrap;
+   gap: 6px;
+   justify-content: center;
+}
+
+main .users {
+   width: calc((1500px - (6px * 6)) / 7);
+   position: relative;
+}
+
+main .users img {
+   width: 100%;
+   display: block;
+}
+
+main .user-details {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding: 3px;
+}
 
 
 /* #endregion */
@@ -126,6 +182,28 @@ FOOTER
 
 footer {
    height: 80px;
+}
+
+
+footer .bottom-bar {
+   height: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+footer .voice-video, footer .end-meeting {
+   /* background-color: orange; */
+   width: 20%;
+}
+
+footer .button, footer .angle up {
+   text-align: center;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+footer .icon-list {
+   align-items: center;
 }
 
 /* #endregion */
