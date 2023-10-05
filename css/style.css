@@ -10,6 +10,32 @@ RESET
     box-sizing: border-box;
  }
 
+ /* 
+********
+DEBUG
+********
+*/
+
+/* #region */
+
+.debug header {
+   background-color: black;
+}
+
+.debug main {
+   background-color: green;
+}
+
+.debug footer {
+   background-color: aqua;
+}
+
+.debug .container {
+   background-color: orange;
+}
+
+/* #endregion */
+
 
 /* 
 ********
@@ -18,6 +44,15 @@ TYPOGRAPHY
 */
 
 /* #region */
+
+body {
+   color: white;
+   font-family: 'Roboto', sans-serif;
+}
+
+.headericon {
+   font-size: 12px;
+}
 
 /* #endregion */
 
@@ -29,6 +64,15 @@ COMMON
 
 /* #region */
 
+.flex {
+   display: flex;
+}
+
+.container {
+   max-width: 1500px;
+   margin: 0 auto;
+}
+
 /* #endregion */
 
 /* 
@@ -38,6 +82,19 @@ HEADER
 */
 
 /* #region */
+
+header {
+   height: 50px;
+   text-align: end;
+}
+
+.headericon {
+   display: inline-block;
+   background-color: #4a4a4a;
+   border-radius: 5px;
+   padding: 4px;
+   margin: 4px;
+}
 
 /* #endregion */
 
@@ -49,6 +106,14 @@ MAIN
 
 /* #region */
 
+main {
+   height: calc(100vh - 130px);
+   padding-top: 30px;
+   /* padding-top: 80px; */
+}
+
+
+
 /* #endregion */
 
 /* 
@@ -58,5 +123,9 @@ FOOTER
 */
 
 /* #region */
+
+footer {
+   height: 80px;
+}
 
 /* #endregion */
