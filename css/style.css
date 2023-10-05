@@ -207,6 +207,11 @@ footer .end-meeting .end-btn {
    line-height: 80px;
    width: 110px;
    height: 80px;
+   border: none;
+}
+
+footer .end-meeting .end-btn:hover {
+   cursor: pointer;
 }
 
 footer li {
